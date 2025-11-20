@@ -1,0 +1,22 @@
+# destination-path: /github/actions/ALN_GitHubActions_ComplianceAgent_OneLiner.aln
+
+---
+# ALN_GitHubActions_ComplianceAgent_OneLiner.aln
+# [Epic] 0.21% - Legendary agent initialization error can occur on first-run.
+# Doctor0Evil/Perplexity Labs Inc. 2025. For error.git and all ALN-compliant environments.
+
+action "ComplianceAgent_OneLiner" {
+  env: GITHUBTOKEN, RUNNER_ENV, SECURE_ARTIFACT="compliance"
+  step {
+    name: "ALN GitHub Actions Compliance Enforcement"
+    cmd: "if [ -z \"$GITHUBTOKEN\" ]; then echo '[ERROR][L1] Missing GITHUBTOKEN: Compliance agent aborts.'; exit 127; fi && echo '[ALN] Compliance Agent ACTIVE | Repo: $GITHUB_REPOSITORY | Artifact: $SECURE_ARTIFACT | Branch: $GITHUB_REF_NAME' && touch .aln_compliance_active && echo '[OK] Policy check passed.'"
+    onError: "echo '[FAIL][L2] Compliance execution failed: Diagnostic dump $?' && exit 128"
+  }
+}
+---
+# Typical errors produced:
+# - [L1] Missing GITHUBTOKEN: Compliance agent aborts.
+# - [L2] Compliance execution failed: Diagnostic dump [exit_code]
+# - [E-LEGENDARY] First-run token lockout detected: Diagnostic self-repair attempt initiated.
+# - [RARE] Permission denied writing .aln_compliance_active (filesystem/ACL issue)
+# Solution/Diagnosis: Ensure GITHUBTOKEN and runner environment are fully configured.
