@@ -1,0 +1,10 @@
+﻿Pillar,Finding,Recommended Action,Owner,Deadline
+Legal,Vague jurisdiction clause,"Amend to specify ""the laws of the State of New York"" or ""the courts of England and Wales"".",Legal Team,2025-11-15
+Legal,Missing Rome I & Hague Convention,Add explicit references to these treaties in the governing law and dispute resolution clauses.,Legal Team,2025-11-15
+Legal,Generic audit_rights,"Revise clause to include scope, confidentiality, cost, and frequency as per vendor audit examples.",Legal Team,2025-11-15
+Digital,RepoJacking Risk,"Reclaim any old GitHub org names. Enable GitHub Secret Scanning, Dependency Review, and Branch Protection.",DevOps / Security,2025-11-07
+Digital,Public Code Exposure,Move all sensitive SYS:core", "ALN:core", and proprietary ALN code to a private, internal package registry.",DevOps / Security,2025-11-10
+Infrastructure,Hypervisor Vulnerability,"Enable vSphere Lockdown Mode, "execInstalledOnly", and ESXi Audit Logging.",Infrastructure Team,2025-11-07
+Infrastructure,Weak Access Control,Enforce phishing-resistant MFA (FIDO2/WebAuthn) for all administrative accounts.,Infrastructure Team,2025-11-07
+Infrastructure,Lack of Isolation,"Create a dedicated, air-gapped ""Compliance Cluster"" for the PhoenixFutureBlueprint infrastructure.",Infrastructure Team,2025-11-20
+Organizational,Cultural Risk,"Implement mandatory cybersecurity training for all personnel, focusing on social engineering and secure code handling.",HR / Security,Ongoing

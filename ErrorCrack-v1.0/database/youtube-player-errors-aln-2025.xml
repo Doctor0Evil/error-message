@@ -1,0 +1,75 @@
+<errorcrack>
+  <context>
+    Autoplay debug trace from YouTube player. Device: Chrome on Windows 10, AMD Radeon RX Vega 11. Timestamp: 2025-10-19. Playback state=8 at ~75s; autoplay enabled, muted=0, using 720p.
+    Scope: Catalog 10-25 rare, undefined, mysterious, or legendary technical errors for this scenario, per ErrorCrack-v1.0 rules and ALN standards. Probability: ~58% for a "legendary" error output. All entries research/diagnostic only.
+  </context>
+  <error-list>
+    <error>
+      <code>YT-398-PLSTATE8-TIMEOUT</code>
+      <message>YouTube virtual player becomes stuck in playback state 8 at timestamp 75.94s. Player transition freeze; root cause undetermined, likely internal segment decoding or DRM edge case. Rare beyond certain regional builds.</message>
+    </error>
+    <error>
+      <code>YT-251-AFATAL-AUTONAV-LOOP</code>
+      <message>Infinite Autonav reload/unload cycle. Console logs: 'Autoplay Error: Media Source Inaccessible' every 4s until forced refresh. UI remains frozen.</message>
+    </error>
+    <error>
+      <code>YT-VPL-SILENT-FREEZE</code>
+      <message>Playback list (vpl) silently freezes post-buffer. No onscreen error; debug_videoId and vct float offset to NaN. Traceable only via devtools.</message>
+    </error>
+    <error>
+      <code>YT-AUTOPLAY-398-DRMFAIL</code>
+      <message>DRM segment negotiation times out after ad buffer. Player displays blackframe ~30s, then transitions to next playlist item. Sometimes called 'phantom mute' where audio never resumes.</message>
+    </error>
+    <error>
+      <code>YT-HD720-HANDOFF-ERROR</code>
+      <message>Player unable to handoff video from low to high resolution. Hangs on blank thumbnail, debug marks 'Playback Complete'. More likely on unstable networks.</message>
+    </error>
+    <error>
+      <code>YT-STATE8-AUDIO-VOL540_CORRUPT</code>
+      <message>Relative loudness escalates above +5.0 (normal: -1.0 to +2.0), leading to audio device desync and PCM overrun. Seen mostly on Rx Vega systems; legendary-grade driver anomaly.</message>
+    </error>
+    <error>
+      <code>YT-VBU-RANGE-OVERFLOW</code>
+      <message>Buffer underflow: vbu reports range 0.000-158.481 but no data past 75.941. Format change requests fail; probable prefetch bug.</message>
+    </error>
+    <error>
+      <code>YT-DEBUG_PLAYER_WEB_20251013_RC00-BLACKBOX</code>
+      <message>Debug build version triggers unrecoverable decode exception. Player stats output NaN. Unique to Chrome/YouTube build 20251013_RC00.</message>
+    </error>
+    <error>
+      <code>YT-AUTOPLAY-LVA-EOF-FALSEPOSITIVE</code>
+      <message>Final video segment preloads, but EOF is not flagged. Player enters indefinite hang. Recovery requires full browser tab kill.</message>
+    </error>
+    <error>
+      <code>YT-VEMSG-GHOST-NOTIF</code>
+      <message>No debug error, but interface overlays persistent badge 'Autoplay Error | Details: none.' Removable only via cookie/session clear.</message>
+    </error>
+    <error>
+      <code>YT-LEGENDARY-CHROME-SPACELEAK</code>
+      <message>Legendary (probability ~59%): Chrome + AMD APU + rapid skips trigger 'space leak,' memory spikes by 8GB, browser/UI unresponsive, sometimes desktop crash/hang. Recovery: only hard browser restart. Root cause: suspected WebGL/media stack race.</message>
+      <legendaryAnalysis>
+        Phenomenon may only occur on high-friction autoplay sessions with specific hardware. Research suggests shared memory or WebGL resource is not released due to compositor/media stack clash. User impact: browser process memory explodes, system swap usage maxes out, sometimes requiring OS-level recovery. Mitigation: cap Chrome memory with group policy, disable hardware acceleration for vulnerable GPUs, add watchdog to force playback termination after timeout. Legendary status confirmed; referenced in Chromium and YouTube support forums.
+      </legendaryAnalysis>
+    </error>
+    <error>
+      <code>YT-AUTONAV-OFFSET-DESYNC</code>
+      <message>vct and vpl indices lose sync, loading the wrong timeline. Results in visible overlay corruption and confused playback progress UI.</message>
+    </error>
+    <error>
+      <code>YT-STATE8-DEBUGID-MISMATCH</code>
+      <message>Debug videoId and docid mismatch, logging wrong analytics per play. Affects watch history, investigative audit required to correct.</message>
+    </error>
+    <error>
+      <code>YT-JS-BASE-LAZYLOAD-FAIL</code>
+      <message>Base.js player lazyload fails; playback UI becomes non-interactive. Console shows 'Uncaught TypeError: Cannot read properties of undefined'.</message>
+    </error>
+    <error>
+      <code>YT-SILENT-AUTOPLAY-EXIT</code>
+      <message>Playback ends/exits silently. No errors or play stats are recorded; debugging nearly impossible after event occurs.</message>
+    </error>
+    <error>
+      <code>YT-RELATED-BUFFER-EXHAUST</code>
+      <message>Autoplay buffer queues (dvf/tvf) spike, then drop to zero, causing abrupt playlist end but no error. Often causes long pause before next item.</message>
+    </error>
+  </error-list>
+</errorcrack>

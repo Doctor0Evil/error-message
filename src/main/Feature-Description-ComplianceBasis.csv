@@ -1,0 +1,6 @@
+"Feature","Description","Compliance Basis"
+"Absolute Single-Instance Enforcer","Guarantees only one nanoswarm per cluster via hardware-bound verification.","OECD Nano Charter, NNI-FY25"
+"Entropy-Gated Execution","Monitors deviations in nanoswarm behavior under 0.00001 entropy drift.","ISO 23894:2025 Risk Metrics"
+"Gamma Reality Lockdown","Non-interactive metaphysical wall enforcing total informational isolation.","GNSCT & ALN Governance Protocol"
+"Dynamic SafeHold Recovery","Automated freeze and forensic rollback sequence following anomalies.","NIST AI RMF 2.0"
+"Fairness Allocation Logic","Global nano-resource sharing per capita, verified every 24 hours.","UN Equal-Tech Agenda 2030"

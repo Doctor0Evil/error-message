@@ -1,0 +1,6 @@
+"Aspect","Chunk 1","Chunk 2"
+"Repository Structure","Root charter, manifest, core fragment, governance particle, compliance CI workflow","Added multiple fragments (Consent, Statute Search, Arbitration), particles (identity, consent, audit), extended workflows, docker setup"
+"Focus","Initial foundation, legal reasoning core, governance enforcement","Expanded reasoning and governance, added consent, identity, dispute resolution, audit compliance, notarization, deploy support"
+"Compliance & Security","Basic manifest with indestructible binding; governance particle","Full particle set addressing identity, consent management, audit trails; notarization and audit export workflows"
+"Scale & Complexity","Single reasoning engine, basic governance","Multi-fragment, multi-particle modular system with extended CI and containerization infrastructure"
+"Intended Use","Basic legal reasoning and governance verification","Comprehensive compliance, secure identity and consent management, detailed audit capabilities, deployment readiness"

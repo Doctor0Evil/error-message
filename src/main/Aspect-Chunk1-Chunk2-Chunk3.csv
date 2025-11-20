@@ -1,0 +1,6 @@
+"Aspect","Chunk 1","Chunk 2","Chunk 3"
+"Governance Complexity","Basic enforcement particle","Expanded identity, consent, audit","Full identity authentication with MFA, consent lifecycle management, audit alerting"
+"Automation & Orchestration","Single compliance CI workflow","Notarization and audit export CI","Comprehensive orchestration workflow with testing, deployment, and governance notifications"
+"Deployment Readiness","Basic Dockerfile","Containerization setup","Staging deployment script + automated notifications"
+"Compliance Scope","Foundational compliance","Particle-specific compliance","Human-in-the-loop governance, multi-factor authentication, alerting and KPI management"
+"System Integration","Initial setup","Modular particles","Full workflow orchestration and governance engagement"

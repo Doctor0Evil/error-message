@@ -1,0 +1,6 @@
+"Skill Name","Function/Purpose","Safety & Power Features","Real-World Feasibility"
+"Adaptive Visual Overlay","Context-dependent HUD showing critical info—navigation, contacts, tasks, safety cues","Uses event-driven rendering, only active as-needed, low-duty AR compute","OLED/LC microdisplays, AR optics, real-time OS overlays"
+"Passive Threat Analysis","Non-intrusive neural/BCI scan for nearby risk indicators (noise, devices, presence)","Runs in scheduled micro-intervals, with QPU filters blocking false alarms","Event-driven BCI, neuromorphic pattern models"
+"Secure BioAuth","Continuous, passive multifactor authentication using biometrics (pulse, gait, EEG)","No always-on camera/microphone, ultra-low-power hardware integration","FDA-grade biosensors, edge-AI chipsets"
+"Haptic Microfeedback","Gentle, adaptive feedback for posture, stress, or environment (vibration, warmth)","Only triggers on deviation; power-cycled, not constant stimulation","Haptic microactuators, Bluetooth low-energy"
+"Quantum Data Keyring","Hardware-anchored password/credential vault using QKD-enhanced key distribution","Always locked when not in explicit use, never kept in RAM long-term","QKD modules, hardware security enclaves"

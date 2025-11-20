@@ -1,0 +1,6 @@
+"Feature/Principle","Design Implementation","Data Sovereignty Role"
+"MG-Encryption (SHA-12MG)","Default sealing of all artifacts and audit records","Prevents data exfiltration"
+"No Root Access","JIT privilege, policy/privacy guardrails, no superuser","Eliminates central authority"
+"Executive EP-Systems","Fine-grained controls, session logging, MFA","Exact traceability, no override"
+"Hash-Chained Ledgers","Append-only SHA-12MG audit trails","Immutable compliance proof"
+"Distributed KMS/Key Mgmt","HSM/KMS with quantum-safe ciphers","Unbreachable key sovereignty"
